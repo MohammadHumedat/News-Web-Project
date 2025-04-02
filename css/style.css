@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
 :root {
-    --mainfont :"Cairo", sans-serif;
+    --mainfont: 'Cairo', sans-serif;
+    --secondfont: 'Poppins', sans-serif;
+    --maincolor:   #356e60;
 }
 
 body {
@@ -28,7 +30,7 @@ body {
     font-size: 20px;
 }
 .webnav {
-    background-color:#356e60;
+    background-color:var(--maincolor);
     height: 6rem;
     color: #F0FFFF;
 
@@ -76,6 +78,7 @@ body {
 }
 .title {
     position: relative;
+    
     display: inline-block;
     font-size: 30px;
     color: #333;
@@ -101,7 +104,7 @@ body {
   
 
 .social {
-    background-color:#356e60 ;
+    background-color:var(--maincolor) ;
     color: #F0FFFF;
     padding: 10px;
     border-radius: 50%;
@@ -110,7 +113,11 @@ body {
 }
 .social:hover {
     background-color: #F0FFFF;
-    color: #356e60;
+    color: var(--maincolor);
+    opacity: 0.7;
+}
+.my-card {
+    transition: all 0.3s ease-in-out;
 }
 .my-card:hover {
     transform: scale(1.05);
